@@ -1,0 +1,5 @@
+extends: '@uphold/uphold'
+
+rules:
+  id-match: 0
+  no-underscore-dangle: 0
