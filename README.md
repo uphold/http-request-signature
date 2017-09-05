@@ -9,7 +9,7 @@ An HTTP signature parser and generator fully compliant with the proposed "Signin
 const { sign } = require('@uphold/http-signature');
 const signature = sign({
   headers: {
-    '(request-path)': 'post /foo',
+    '(request-target)': 'post /foo',
     date: '2017-09-01T15:04:17.555Z',
     digest: 'SHA-256=X48E9qOokqqrvdts8nOJRJN3OWDUoyWxBf7kbu9DBPE='
   },
@@ -17,7 +17,7 @@ const signature = sign({
   secretKey: '96aa9ec42242a9a62196281045705196a64e12b15e9160bbb630e38385b82700e7876fd5cc3a228dad634816f4ec4b80a258b2a552467e5d26f30003211bc45d'
 }, { algorithm: 'ed25519' });
 
-// Result: `keyId="primary",algorithm="ed25519",headers="(request-path) date digest",signature="MSd6OVEG4bZ/ClBSKApzqC1UbUkPclq9PyLwWv1//Br2YouqOb1T6izcOPWPY9scxWSfLHR4m6d/HThm7MX7Dw=="`
+// Result: `keyId="primary",algorithm="ed25519",headers="(request-target) date digest",signature="MSd6OVEG4bZ/ClBSKApzqC1UbUkPclq9PyLwWv1//Br2YouqOb1T6izcOPWPY9scxWSfLHR4m6d/HThm7MX7Dw=="`
 ```
 
 ### Verifying an HTTP message
@@ -26,10 +26,10 @@ const signature = sign({
 const { verify } = require('@uphold/http-signature');
 const result = verify({
   headers: {
-    '(request-path)': 'post /foo',
+    '(request-target)': 'post /foo',
     date: '2017-09-01T15:04:17.555Z',
     digest: 'SHA-256=X48E9qOokqqrvdts8nOJRJN3OWDUoyWxBf7kbu9DBPE='
-    signature: 'keyId="primary",algorithm="ed25519",headers="(request-path) date digest",signature="MSd6OVEG4bZ/ClBSKApzqC1UbUkPclq9PyLwWv1//Br2YouqOb1T6izcOPWPY9scxWSfLHR4m6d/HThm7MX7Dw=="'
+    signature: 'keyId="primary",algorithm="ed25519",headers="(request-target) date digest",signature="MSd6OVEG4bZ/ClBSKApzqC1UbUkPclq9PyLwWv1//Br2YouqOb1T6izcOPWPY9scxWSfLHR4m6d/HThm7MX7Dw=="'
   },
   publicKey: 'e7876fd5cc3a228dad634816f4ec4b80a258b2a552467e5d26f30003211bc45d'
 }, { algorithm: 'ed25519' });
@@ -37,7 +37,7 @@ const result = verify({
 // Result:
 // {
 //   algorithm: 'ed25519',
-//   headers: ['(request-path)', 'date', 'digest'],
+//   headers: ['(request-target)', 'date', 'digest'],
 //   keyId: 'primary',
 //   signature: 'MSd6OVEG4bZ/ClBSKApzqC1UbUkPclq9PyLwWv1//Br2YouqOb1T6izcOPWPY9scxWSfLHR4m6d/HThm7MX7Dw==',
 //   verified: true
