@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@uphold/eslint-config-uphold@github:uphold/eslint-config-uphold#master":
-  version "0.0.0"
-  resolved "https://codeload.github.com/uphold/eslint-config-uphold/tar.gz/3dd1bbbee2dc5bf4a74fe76ebb97e19fa57f1eb8"
-  dependencies:
-    babel-eslint "^7.1.1"
-    eslint-plugin-mocha "^4.0.0"
-    eslint-plugin-sort-class-members "^1.0.1"
-    eslint-plugin-sort-imports-es6 "^0.0.3"
-    eslint-plugin-sql-template "^2.0.0"
-
 "@uphold/github-changelog-generator@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-0.4.1.tgz#767744e7416b9e50df471399bab45b970b0447f0"
@@ -706,6 +696,16 @@ escodegen@^1.6.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.2.0"
+
+eslint-config-uphold@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-uphold/-/eslint-config-uphold-0.0.1.tgz#3672b75e17f2c2f68e174d8fadf3ccf429bb48d5"
+  dependencies:
+    babel-eslint "^7.1.1"
+    eslint-plugin-mocha "^4.0.0"
+    eslint-plugin-sort-class-members "^1.0.1"
+    eslint-plugin-sort-imports-es6 "^0.0.3"
+    eslint-plugin-sql-template "^2.0.0"
 
 eslint-plugin-mocha@^4.0.0:
   version "4.11.0"

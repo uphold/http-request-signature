@@ -1,4 +1,4 @@
-extends: '@uphold/uphold'
+extends: uphold
 
 rules:
   id-match: 0
