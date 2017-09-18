@@ -16,7 +16,7 @@ const extraAsserts = require('validator.js-asserts');
  */
 
 const asserts = merge({}, extraAsserts, customAsserts);
-const logger = debugnyan('http-signature:validator');
+const logger = debugnyan('http-request-signature:validator');
 const validator = new Validator();
 
 /**

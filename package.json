@@ -1,10 +1,10 @@
 {
-  "name": "@uphold/http-signature",
+  "name": "http-request-signature",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "changelog": "github-changelog-generator --future-release=$npm_package_version --owner=uphold --repo=http-signature > CHANGELOG.md",
+    "changelog": "github-changelog-generator --future-release=$npm_package_version --owner=uphold --repo=http-request-signature > CHANGELOG.md",
     "lint": "eslint --cache .",
     "version": "npm run changelog && git add -A CHANGELOG.md src",
     "test": "jest --env=node"
