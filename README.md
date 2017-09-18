@@ -1,4 +1,4 @@
-# http-signature
+# http-request-signature
 An HTTP signature parser and generator fully compliant with the proposed "Signing HTTP Messages" [Internet Draft](https://www.ietf.org/id/draft-cavage-http-signatures-07.txt).
 
 ## Usage
@@ -6,7 +6,7 @@ An HTTP signature parser and generator fully compliant with the proposed "Signin
 ### Signing an HTTP message
 
 ```js
-const { sign } = require('@uphold/http-signature');
+const { sign } = require('http-request-signature');
 const signature = sign({
   headers: {
     '(request-target)': 'post /foo',
@@ -23,7 +23,7 @@ const signature = sign({
 ### Verifying an HTTP message
 
 ```js
-const { verify } = require('@uphold/http-signature');
+const { verify } = require('http-request-signature');
 const result = verify({
   headers: {
     '(request-target)': 'post /foo',
