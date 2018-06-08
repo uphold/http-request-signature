@@ -600,9 +600,9 @@ debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
-debugnyan@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/debugnyan/-/debugnyan-2.0.1.tgz#d3a5a66ac311b76e881405c78cefe57c78859a5f"
+debugnyan@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/debugnyan/-/debugnyan-2.0.2.tgz#83138804167ab2733988b9b0b90f0d11c9d1e1a1"
   dependencies:
     bunyan "^1.8.1"
     debug "^2.2.0"
