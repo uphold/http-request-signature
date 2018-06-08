@@ -10,7 +10,7 @@
     "test": "jest --env=node"
   },
   "dependencies": {
-    "debugnyan": "^2.0.1",
+    "debugnyan": "^2.0.2",
     "lodash": "^4.17.4",
     "standard-http-error": "^2.0.0",
     "validator.js": "^2.0.3",
