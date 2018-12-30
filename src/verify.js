@@ -49,9 +49,9 @@ module.exports = function verify({ headers: requestHeaders, publicKey } = {}, { 
 
   // Verify the signature using the ed25519 algorithm.
   const verified = nacl.sign.detached.verify(
-    Buffer.from(message),
-    Buffer.from(signature, 'base64'),
-    Buffer.from(publicKey, 'hex')
+    Uint8Array.from(Buffer.from(message)),
+    Uint8Array.from(Buffer.from(signature, 'base64')),
+    Uint8Array.from(Buffer.from(publicKey, 'hex'))
   );
 
   if (!verified) {

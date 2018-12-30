@@ -36,8 +36,8 @@ module.exports = function sign({ headers: requestHeaders, keyId, secretKey } = {
 
   // Generate signature using the ed25519 algorithm.
   const signature = Buffer.from(nacl.sign.detached(
-    Buffer.from(message),
-    Buffer.from(secretKey, 'hex')
+    Uint8Array.from(Buffer.from(message)),
+    Uint8Array.from(Buffer.from(secretKey, 'hex'))
   )).toString('base64');
 
   // Return a signature in the format described by `draft-cavage-http-signatures-07` internet draft.
