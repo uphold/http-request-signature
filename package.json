@@ -22,7 +22,7 @@
     "eslint": "^5.11.1",
     "eslint-config-uphold": "^0.2.0",
     "jest": "^23.6.0",
-    "should": "^12.0.0"
+    "should": "^13.2.3"
   },
   "engines": {
     "node": ">=7.10.0"
