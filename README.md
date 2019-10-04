@@ -2,7 +2,22 @@
 An HTTP signature parser and generator fully compliant with the proposed "Signing HTTP Messages" [Internet Draft](https://www.ietf.org/id/draft-cavage-http-signatures-07.txt).
 
 ## Status
+
 [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
+
+## Installation
+
+Install the package via `npm`:
+
+```sh
+npm install http-request-signature --save
+```
+
+Install the package via `yarn`:
+
+```sh
+yarn add http-request-signature
+```
 
 ## Usage
 
@@ -52,11 +67,13 @@ const result = verify({
 Only the `ed25519` algorithm is supported at this time.
 
 ## Release
+
 ```sh
 npm version [<new-version> | major | minor | patch] -m "Release %s"
 ```
 
 ## License
+
 MIT
 
 
