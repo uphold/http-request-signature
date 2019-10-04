@@ -52,3 +52,6 @@ Only the `ed25519` algorithm is supported at this time.
 ```sh
 npm version [<new-version> | major | minor | patch] -m "Release %s"
 ```
+
+## License
+MIT
