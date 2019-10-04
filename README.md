@@ -1,6 +1,9 @@
 # http-request-signature
 An HTTP signature parser and generator fully compliant with the proposed "Signing HTTP Messages" [Internet Draft](https://www.ietf.org/id/draft-cavage-http-signatures-07.txt).
 
+## Status
+[![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
+
 ## Usage
 
 ### Signing an HTTP message
@@ -55,3 +58,9 @@ npm version [<new-version> | major | minor | patch] -m "Release %s"
 
 ## License
 MIT
+
+
+[npm-image]: https://img.shields.io/npm/v/http-request-signature.svg
+[npm-url]: https://npmjs.org/package/http-request-signature
+[travis-image]: https://travis-ci.org/uphold/http-request-signature.svg?branch=master
+[travis-url]: https://travis-ci.org/uphold/http-request-signature
