@@ -376,16 +376,16 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@uphold/github-changelog-generator@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-0.8.1.tgz#1248bef4d85b212a3e31538f1737bc2f45610ac5"
-  integrity sha512-dluWg7rMIJoDipmCHRK8eO2FCZGPDcFnVusQ179jEPjqgSGkNwEWFBk0JjqFtZ5NEoP7vFSdmVW+EeVNPGdqlQ==
+"@uphold/github-changelog-generator@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-1.0.1.tgz#d63aa383e4e3124b1f80d84f9d7ee55585a65cfd"
+  integrity sha512-Qe7lO4HQxsy7HQKSi7cn/jQBe5CAT/TtVAQz2yiC8F4qgS6L78e433yTC0uai9EzOnLvt6tbLEhuMC8Jf32lOQ==
   dependencies:
     "@octokit/rest" "^15.15.1"
     bluebird "^3.5.3"
     commander "^2.19.0"
     ini "^1.3.5"
-    lodash "^4.17.11"
+    lodash "^4.17.15"
     moment "^2.24.0"
 
 abab@^2.0.0:
@@ -2529,7 +2529,7 @@ lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
-lodash@^4.17.13:
+lodash@^4.17.13, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
