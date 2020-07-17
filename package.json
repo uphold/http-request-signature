@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "debugnyan": "^2.0.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "standard-http-error": "^2.0.0",
     "tweetnacl": "^1.0.0",
     "validator.js": "^2.0.3",
