@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.5](https://github.com/uphold/http-request-signature/releases/tag/v0.0.5) (2022-08-23)
+- Update validator.js-asserts@7.3.1 [\#34](https://github.com/uphold/http-request-signature/pull/34) ([JerrySievert](https://github.com/JerrySievert))
+
 ## [v0.0.4](https://github.com/uphold/http-request-signature/releases/tag/v0.0.4) (2020-04-15)
 - Fix changelog script [\#19](https://github.com/uphold/http-request-signature/pull/19) ([kurayama](https://github.com/kurayama))
 - Update yarn.lock [\#18](https://github.com/uphold/http-request-signature/pull/18) ([kurayama](https://github.com/kurayama))
